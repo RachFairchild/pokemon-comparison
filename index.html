@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Pokémon Battle</title>
+
+		<link rel="shortcut icon" type="image/png" href="img/pokeball.png"/>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Google Fonts: -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<section class="s1">
+			<h1>Pokémon Battle!</h1>
+			<h2 class="subtitle" id="center">A Pokémon battle type-comparison tool</h2>
+			<p>VOLUME WARNING: Nostalgia ahead!</p>
+			<input id='poke1' type="text" name="" value="" placeholder="Your Pokemon" required>
+			<input id='poke2' type="text" name="" value="" placeholder="Your opponent's Pokemon" required>
+			<!-- <button type="button" name="button">Battle!</button> -->
+			<input id="button" type="image" name="button" src="./img/pokeball.png" />
+		</section>
+		<section class="s2">
+			<img id='pokeImg1' src="" alt="" onError="this.onerror=null;this.src='./img/placeholder.png';">
+			<img id='pokeImg2' src="" alt="" onError="this.onerror=null;this.src='./img/placeholder.png';">
+			<h2 class="effectiveness"></h2>
+		</section>
+
+		<section class="s3">
+			<h2 class="results-key">Battle Pairing Key:</h2>
+			<p class="key-explanation">The following denotes the strength of your chosen Pokémon's type against its competitor.</p>
+			<ul>
+				<li>Super effective = 160-200% damage</li>
+				<li>Effective = 100% damage</li>
+				<li>Not very effective = 50% damage</li>
+				<li>No effect = 0% damage</li>
+			</ul>
+		</section>
+
+		<section class="s4">
+			<small>&copy; Created by <a href="https://github.com/RachFairchild" target="_blank" rel="noopener noreferrer">Rachel Fairchild</a></small>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
